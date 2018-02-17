@@ -19,6 +19,15 @@ public class DontForgetTheLyrics {
 	 */
 	
 	public static void main(String[] args) {
+		JOptionPane.showMessageDialog(null,"I PLAY THE BEGGINING OF A SONG AND U TELL MEE WITH ITS IS");
+		playSound("UraniumFever.wav");
+		String po =JOptionPane.showInputDialog("What sung is it");
+		if(po.equals("Uranium Fever")) {
+			JOptionPane.showMessageDialog(null, "Good job thats right");
+		}
+		else{
+			JOptionPane.showMessageDialog(null,"You got it roong he");
+		}
 		// 4. Make a pop-up to explain the game.
 
 		// 5. Use the playSound method to play your song.
