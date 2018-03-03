@@ -24,6 +24,22 @@ public class StringMethods1 {
 		//    EXAMPLE: if your string is "abc" and you are searching 
 		//             for char 'b', then print "b is at index 1"
 		
+				String a = "Nikita";	
+System.out.println(a.charAt(3));
+System.out.println(a.length());
+for (int i = 0; i < a.length(); i++) {
+	
+	System.out.println(a.charAt(i));
+}
+		
+		for (int x=0;x < a.length(); x++) {
+			System.out.println(a.indexOf("t"));
+			
+			
+		}
+		
+	}
+		
 	}
 }
 
