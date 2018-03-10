@@ -16,23 +16,39 @@ public class FruitQuiz extends KeyAdapter {
 		question1 = new JLabel(
 				"<html>Which is not a real animal? <br> A: Flubber Monkey <br> B: Pink Fairy Armadillo <br> C: Dumbo Octopus</html>");
 		// 11. Make another question called "question2"
-		
+		question2 = new JLabel(
+				"<html>Which is not a fruit? <br> A: apple <br> B: banana <br> C: carrot</html> ");
+				
 	}
 
 	@Override
 	public void keyPressed(KeyEvent arg0) {
 		int keyCode = arg0.getKeyCode();
 		// 1. Print out the key code variable
-		
+		System.out.println(keyCode);
 
 		// 2. Make 3 variables that hold the key codes for apple, banana and carrot
-
+String a = "apple";
+String b ="banana";
+String c ="carrot";
 		
 
 		
-		if (question1.isShowing()) {
+		if (question1.isShowing ()|| question2.isShowing()) {
 			// 3. If they touched the right fruit, do steps 4 and 7
-			
+			if(keyCode == 65) {
+				incorrect();
+				playSound("lose.wav");
+			}
+			if(keyCode == 66) {
+				incorrect();
+				playSound("lose.wav");
+			}
+			if(keyCode == 67) {
+				correct();
+				playSound("win.wav");
+				nextQuestion(question2);
+			}
 				// 4. Call the correct() method
 				
 				// 7. Use the nextQuestion() method to go to question2
